@@ -1,0 +1,234 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #333;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background-color: #00b386;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+header img {
+    max-width: 100px;
+}
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+}
+nav {
+    background-color: #00b386;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #70dbdb;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+span.barn {
+    color: #70dbdb;
+    font-weight: bold;
+}
+#heroHome img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #006646;
+}
+dt {
+    color: #00664d;
+}
+main {
+    background-color: #fff;
+    padding: 20px;
+}
+main h2 {
+    color: #00664d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 5px #cccccc;
+}
+main p {
+    font-size: 1.1em;
+}
+main ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+#contact {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #006600;
+}
+footer {
+    background-color: #00b386;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+#heroBoard img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#heroTraining img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+#mobile {
+    display: none;
+}
+#desktop {
+    display: inline;
+} 
+table {
+    border-color: #006600;
+    border-collapse: collapse;
+}
+td {
+    padding: 0.5em;
+    border: solid 1px #006600;
+}
+th {
+    padding: 0.5em;
+    border: solid 1px #006600;
+}
+table tr:nth-of-type(odd) {
+    background-color: #ecf9ec;
+}
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 125px;
+    padding-right: 2em;
+}
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    width: 135px;
+    margin-left: 20px;
+}
+#gallery {
+    position: relative;
+    height: 200px;
+    margin-bottom: 50px;
+}
+#gallery ul {
+    list-style: none;
+    width: 300px;
+}
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+#gallery img {
+    border: none;
+}
+#gallery a {
+    text-decoration: none;
+    font-style: italic;
+    color: #ffffff;
+}
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+#gallery li:hover span {
+    position: absolute;
+    top: 15px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+#gallery figure {
+    position: absolute;
+    left: 280px;
+    opacity: 0.25;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    #heroHome img {
+        max-height: 200px;
+    }
+    #heroBoard img {
+        max-height: 200px;
+    }
+    #heroTraining img {
+        max-height: 200px;
+    }
+    iframe {
+        max-height: 200px;
+        width: auto;
+    }
+    main p {
+        font-size: 1em;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
+    label {
+        float: none;
+        text-align: left;
+    }
+    input [type="submit"] {
+        margin-left: 0;
+    }
+    #gallery {
+        display: none;
+    }
+}
